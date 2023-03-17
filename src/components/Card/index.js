@@ -24,7 +24,7 @@ const Card = ({
         <div className=' text-xl mb-2'>{title}</div>
         <div className=' text-md text-gray-700'>{address}</div>
       </div>
-      <div className=' h-[250px] bg-black'><img src={bgImg} alt={title} /></div>
+      <div className=' h-[250px] bg-black'><img src={bgImg} alt={title} className={'w-full h-full'} /></div>
       <div className=' px-6 pt-6'>
         <div className=' text-md text-gray-700 pb-2 border-b border-black'>Beds: {features?.beds} / Bath: {features?.bath} / Sq Ft: {features?.sqft}</div>
         <div className=' text-2xl text-gray-800 my-4'>${price}</div>

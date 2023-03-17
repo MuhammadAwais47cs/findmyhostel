@@ -1,14 +1,14 @@
-import Header from './components/Header';
+import { Route, Routes } from 'react-router-dom';
 import Form from './modules/Form';
 import Main from './modules/Main';
 
 function App() {
   return (
-    <>
-    {/* <Header/> */}
-    {/* <Main/> */}
-    <Form/>
-    </>
+    <Routes>
+      <Route path='/' element={<Main />}/>
+      <Route path='/login' element={<Form isSignIn={true} />}/>
+      <Route path='/register' element={<Form isSignIn={false} />}/>
+    </Routes>
   );
 }
 
